@@ -42,10 +42,12 @@
         "elfy": "^1.0.0",
         "eslint": "8.39.0",
         "eslint-config-next": "14.2.5",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
         "humanize-duration-ts": "^2.1.1",
         "lighthouse-sdk": "^2.0.1",
         "moment": "^2.29.4",
         "next": "14.2.5",
+        "next-runtime-env": "^3.2.2",
         "p-limit": "^3.1.0",
         "pako": "^2.1.0",
         "react": "18.3.1",
@@ -64,8 +66,7 @@
         "typescript": "5.0.4",
         "use-async-effect": "^2.2.7",
         "use-tab-visibility": "^1.0.9",
-        "web3js-experimental": "npm:@solana/web3.js@2.0.0",
-        "eslint-plugin-simple-import-sort": "^12.1.1"
+        "web3js-experimental": "npm:@solana/web3.js@2.0.0"
     },
     "devDependencies": {
         "@solana/eslint-config-solana": "^1.0.1",

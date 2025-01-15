@@ -10,6 +10,7 @@ import { ScrollAnchorProvider } from '@providers/scroll-anchor';
 import type { Viewport } from 'next';
 import { Nunito } from 'next/font/google';
 import { Metadata } from 'next/types';
+import { PublicEnvScript } from 'next-runtime-env';
 
 import explorerConfig from '@/explorer.config';
 
@@ -41,6 +42,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className={`${font.variable}`}>
+            <head>
+                <PublicEnvScript />
+            </head>
             <body>
                 <ScrollAnchorProvider>
                     <ClusterProvider>
