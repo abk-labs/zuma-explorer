@@ -121,6 +121,9 @@ importers:
       next:
         specifier: 14.2.5
         version: 14.2.5(@babel/core@7.21.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.53.0)
+      next-runtime-env:
+        specifier: ^3.2.2
+        version: 3.2.2(next@14.2.5(@babel/core@7.21.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.53.0))(react@18.3.1)
       p-limit:
         specifier: ^3.1.0
         version: 3.1.0
@@ -3937,6 +3940,12 @@ packages:
 
   near-seed-phrase@0.2.0:
     resolution: {integrity: sha512-NpmrnejpY1AdlRpDZ0schJQJtfBaoUheRfiYtQpcq9TkwPgqKZCRULV5L3hHmLc0ep7KRtikbPQ9R2ztN/3cyQ==}
+
+  next-runtime-env@3.2.2:
+    resolution: {integrity: sha512-S5S6NxIf3XeaVc9fLBN2L5Jzu+6dLYCXeOaPQa1RzKRYlG2BBayxXOj6A4VsciocyNkJMazW1VAibtbb1/ZjAw==}
+    peerDependencies:
+      next: ^14
+      react: ^18
 
   next@14.2.5:
     resolution: {integrity: sha512-0f8aRfBVL+mpzfBjYfQuLWh2WyAwtJXCRfkPF4UJ5qd2YwrHczsrSzXU4tRMV0OAxR8ZJZWPFn6uhSC56UTsLA==}
@@ -10534,6 +10543,11 @@ snapshots:
       bs58: 4.0.1
       near-hd-key: 1.2.1
       tweetnacl: 1.0.3
+
+  next-runtime-env@3.2.2(next@14.2.5(@babel/core@7.21.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.53.0))(react@18.3.1):
+    dependencies:
+      next: 14.2.5(@babel/core@7.21.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.53.0)
+      react: 18.3.1
 
   next@14.2.5(@babel/core@7.21.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.53.0):
     dependencies:

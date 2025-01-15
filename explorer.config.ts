@@ -1,9 +1,12 @@
+import { env } from 'next-runtime-env';
 import { ClusterType } from '@utils/clusterTypes';
 
-const explorerName = process.env.EXPLORER_NAME || 'Solana';
-const explorerSymbol = process.env.EXPLORER_SYMBOL || 'SOL';
-const clusterName = process.env.CLUSTER_NAME || 'customnet';
-const clusterUri = process.env.CLUSTER_URI || 'http://localhost:8899';
+const explorerName = env('NEXT_PUBLIC_EXPLORER_NAME') || 'Solana';
+const explorerSymbol = env('NEXT_PUBLIC_EXPLORER_SYMBOL') || 'SOL';
+const clusterName = env('NEXT_PUBLIC_CLUSTER_NAME') || 'customnet';
+const clusterUri = env('NEXT_PUBLIC_CLUSTER_URI') || 'http://localhost:8899';
+
+console.log('explorerName', explorerName);
 
 
 const explorer = {
